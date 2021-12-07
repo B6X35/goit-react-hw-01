@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 const TransactionHistory = (props) => {
     const element = props.items.map(item => <TransactionHistoryItem key={item.id} {...item} />)
     return (
-        <table className={styles["transaction-history"]}>
-            <thead className={styles.table}>
+        <table className={`${styles["transaction-history"]} ${styles['table-global']}`}>
+            <thead>
                 <tr className={styles.tr}>
                     <th className={styles.th}>Type</th>
                     <th className={styles.th}>Amount</th>

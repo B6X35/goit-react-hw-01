@@ -1,5 +1,6 @@
 .tablet-tr {
     color: dimgray;
+    
 }
 
 .tablet-tr:nth-child(even) {
@@ -8,8 +9,8 @@
 
 .td {
     border: 1px solid #ccc;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
