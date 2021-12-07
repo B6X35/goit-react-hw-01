@@ -1,4 +1,4 @@
-import './style/App.css';
+import style from './style/App.module.css';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendLIst/FriendList';
@@ -7,7 +7,7 @@ import data from './data';
 
 function App() {
   return (
-    <div className="App">
+    <div className={style["App"]}>
       <Profile  
         username={data.user.username}
         tag={data.user.tag}
