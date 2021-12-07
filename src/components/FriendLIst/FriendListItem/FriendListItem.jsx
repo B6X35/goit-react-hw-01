@@ -1,20 +1,20 @@
-import "./FriendListItem.css";
+import styles from "./FriendListItem.module.css";
 import PropTypes from "prop-types";
 
 
 const FriendListItem = ({isOnline, avatar, name}) => {
     const onlineStatus = () => {
         if(isOnline){
-            return 'online'
+            return styles['online']
         } else {
-            return 'offline'
+            return styles['offline']
         }
     }
     return (
-        <li className="item-friend">
+        <li className={styles.item}>
             <span className={onlineStatus()}>{isOnline}</span>
-            <img className="avatar-friend" src={avatar} alt="User avatar" width="48" />
-            <p className="name-friend">{name}</p>
+            <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
+            <p className={styles.name}>{name}</p>
         </li>
     )
 }

@@ -2,27 +2,20 @@
     text-align: center;
 }
 
-table {
+.table {
     width: 600px;
     border: 1px solid #ccc;
 }
-tr {
+.tr {
     border: 1px solid #ccc;
-}
-td, th {
     border: 1px solid #ccc;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-th {
+.th {
     background-color: #0099ff;
     color: white;
     font-size: 20px;
-    font-weight: bold;
-}
-
-td {
-    font-size: 18px;
     font-weight: bold;
 }

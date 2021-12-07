@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import './StatisticsItem.css';
+import styles from './StatisticsItem.module.css';
 import getRangomColor from './switch-solor'
 
 const StatisticsItem = ({ label, percentage }) => {
@@ -7,9 +7,9 @@ const StatisticsItem = ({ label, percentage }) => {
     backgroundColor: getRangomColor(),
     }    
   return (
-    <li className="item" style={color}>
-      <span className="label-stat">{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li className={styles.item} style={color}>
+    <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
     </li>
   );
 };

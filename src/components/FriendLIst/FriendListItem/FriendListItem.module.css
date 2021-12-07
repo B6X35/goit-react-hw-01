@@ -13,7 +13,7 @@
     background-color: red;
 }
 
-.item-friend {
+.item {
     display: flex;
     align-items: center;
     border: 1px solid grey;
@@ -25,11 +25,11 @@
     margin-bottom: 5px;
 }
 
-.avatar-friend {
+.avatar {
     margin-left: 5px;
     margin-right: 10px;
 }
 
-.name-friend {
+.name {
     font-size: 20px;
 }

@@ -17,7 +17,7 @@
     margin-bottom: 10px;
 }
 
-.stat-list {
+.stat {
     display: flex;
     flex-wrap: wrap;
 }
