@@ -1,0 +1,7 @@
+.tablet-tr {
+    color: dimgray;
+}
+
+.tablet-tr:nth-child(even) {
+    background-color: rgb(197, 213, 230);
+}

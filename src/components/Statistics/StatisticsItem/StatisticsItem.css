@@ -1,0 +1,19 @@
+.item {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    flex-basis: calc(100% / 4);
+    align-items: center;
+    border-right: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.label-stat {
+    color: white;
+}
+
+.percentage {
+    color: white;
+    font-size: 26px;
+}
