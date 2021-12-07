@@ -1,8 +1,8 @@
 import style from './style/App.module.css';
-import Profile from './components/Profile/Profile';
-import Statistics from './components/Statistics/Statistics';
-import FriendList from './components/FriendLIst/FriendList';
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import Profile from './components/Profile';
+import Statistics from './components/Statistics';
+import FriendList from './components/FriendLIst';
+import TransactionHistory from './components/TransactionHistory';
 import data from './data';
 
 function App() {

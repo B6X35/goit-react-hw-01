@@ -3,16 +3,10 @@ import PropTypes from "prop-types";
 
 
 const FriendListItem = ({isOnline, avatar, name}) => {
-    const onlineStatus = () => {
-        if(isOnline){
-            return styles['online']
-        } else {
-            return styles['offline']
-        }
-    }
+    const onlineStatus = isOnline ? styles['online'] : styles['offline']
     return (
         <li className={styles.item}>
-            <span className={onlineStatus()}>{isOnline}</span>
+            <span className={onlineStatus}>{isOnline}</span>
             <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
             <p className={styles.name}>{name}</p>
         </li>

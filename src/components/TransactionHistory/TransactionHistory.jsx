@@ -1,9 +1,9 @@
 import styles from './TransactionHistory.module.css'
-import TransactionHistoryItem from './TransactionHistoryItem/TransactionHistoryItem'
+import TransactionHistoryItem from './TransactionHistoryItem'
 import PropTypes from "prop-types";
 
 const TransactionHistory = (props) => {
-    const element = props.items.map(item => <TransactionHistoryItem key={item.id} {...item} />)
+    const elements = props.items.map(item => <TransactionHistoryItem key={item.id} {...item} />)
     return (
         <table className={`${styles["transaction-history"]} ${styles['table-global']}`}>
             <thead>
@@ -15,7 +15,7 @@ const TransactionHistory = (props) => {
             </thead>
 
             <tbody>
-                {element}
+                {elements}
             </tbody>
         </table>
     )
@@ -23,10 +23,6 @@ const TransactionHistory = (props) => {
 
 export default TransactionHistory;
 
-TransactionHistory.defaultProps = {
-    id: ''
-};
-
 TransactionHistory.propTypes = {
-    id: PropTypes.string.isRequired,
+    items: PropTypes.array.isRequired,
 }
